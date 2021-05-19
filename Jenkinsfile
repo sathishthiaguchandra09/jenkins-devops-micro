@@ -1,5 +1,10 @@
 pipeline {
-	agent { docker { image 'node:16.1'} }
+	agent { 
+		docker { 
+			image 'node:16.1'
+			args '-u root:root'
+		       } 
+	      }
 	stages {
 		stage ('Build') {
 			steps {
