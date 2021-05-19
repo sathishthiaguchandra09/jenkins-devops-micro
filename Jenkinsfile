@@ -2,7 +2,6 @@ pipeline {
 	agent { 
 		docker { 
 			image 'node:16.1'
-			args '-u root:root'
 		       } 
 	      }
 	stages {
