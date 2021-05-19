@@ -19,4 +19,18 @@ pipeline {
 			}
 		}
 	}
+	
+	post {
+		always {
+			echo ' I m awesome'
+		}
+		
+		success {
+			echo 'its success'
+		}
+		
+		failure {
+			echo 'its failure'
+		}
 	}
+}
