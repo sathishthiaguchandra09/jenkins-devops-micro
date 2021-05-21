@@ -49,7 +49,9 @@ pipeline {
 				//docker build -t "sathishthiaguchandra09/currency-exchange-devops:$env.BUILD_TAG"
 				script {
 					dockerImage = docker.build("sathishthiaguchandra09/currency-exchange-devops:${env.BUILD_TAG}")
+				}
 			}
+			
 		}
 		  
 		stage ('Push Docker Image') {
